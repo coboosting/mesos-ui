@@ -14,7 +14,7 @@ class Nodes extends React.Component {
   };
 
   render() {
-    let title = 'Nodes';
+    let title = '集群节点';
     let nodes = this.props.nodes;
 
     let widgets = nodes.map(function(node, i){

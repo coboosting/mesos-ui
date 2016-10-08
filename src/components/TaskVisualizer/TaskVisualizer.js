@@ -82,7 +82,7 @@ class TaskVisualizer extends React.Component {
       <div>
         <List>
           <ListItem
-            primaryText="Apps Legend."
+            primaryText="应用图例:"
           />
           {appColorListRendered}
         </List>
@@ -157,13 +157,13 @@ class TaskVisualizer extends React.Component {
             <RadioButton
               ref="groupByAppName"
               value="name"
-              label="Group by App."
+              label="按应用来分组"
               style={this.getStyles().radioButton}
             />
             <RadioButton
               ref="groupBySlave"
               value="hostname"
-              label="Group by Host."
+              label="按主机来分组"
               style={this.getStyles().RadioButton}
             />
           </RadioButtonGroup>

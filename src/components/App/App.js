@@ -125,11 +125,11 @@ class App extends React.Component {
     let frameworksIcon = React.createElement(FontIcon, {style: iconStyle, className: 'material-icons'}, 'schedule' );
     let logsIcon = React.createElement(FontIcon, {style: iconStyle, className: 'material-icons'}, 'assignment ' );
 
-    let logsText = this.state.leftNavExpanded ? 'Logs' : '';
-    let dashboardText = this.state.leftNavExpanded ? 'Dashboard' : '';
-    let frameworksText = this.state.leftNavExpanded ? 'Frameworks' : '';
-    let nodesText = this.state.leftNavExpanded ? 'Nodes' : '';
-    let tasksText = this.state.leftNavExpanded ? 'Tasks' : '';
+    let logsText = this.state.leftNavExpanded ? '日志' : '';
+    let dashboardText = this.state.leftNavExpanded ? '展示板' : '';
+    let frameworksText = this.state.leftNavExpanded ? '组件' : '';
+    let nodesText = this.state.leftNavExpanded ? '节点' : '';
+    let tasksText = this.state.leftNavExpanded ? '任务' : '';
 
     return [
       { route: '/', text: dashboardText, icon: dashboardIcon },
@@ -229,7 +229,7 @@ class App extends React.Component {
                 <a
                   style={style.githubIcon}
                   className="muidocs-icon-custom-github"
-                  href="https://github.com/capgemini/mesos-ui">
+                  href="https://github.com/coboosting/mesos-ui">
                   GitHub
                 </a>
                 <RouteHandler

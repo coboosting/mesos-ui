@@ -27,18 +27,18 @@ class Tasks extends React.Component {
       },
     };
 
-    let title = 'Tasks';
+    let title = '运行任务';
     this.context.onSetTitle(title);
     return (
       <div>
         <PageTitle title={title} />
         <Tabs>
-          <Tab label="Table" >
+          <Tab label="表格" >
             <div>
               <TaskTable tasks={this.props.tasks} />
             </div>
           </Tab>
-          <Tab label="Visualizer" >
+          <Tab label="可视化" >
             <div>
               <TaskVisualizer tasks={this.props.tasks} />
             </div>

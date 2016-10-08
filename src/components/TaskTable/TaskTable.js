@@ -45,24 +45,24 @@ class TaskTable extends React.Component {
     //https://github.com/callemall/material-ui/issues/2011
     return(
       <div style={this.getStyles().orderBox}>
-        <span>Order tasks by:</span>
+        <span>任务排序方式:</span>
         <RadioButtonGroup ref="orderByRadioButtonGroup" name="orderByRadioButtonGroup" valueSelected={this.state.parameterToOrderBy} onChange={this.setParameterToOrderBy.bind(this)}>
           <RadioButton
             ref="orderByTime"
             value="timestamp"
-            label="Up time"
+            label="在线时间"
             style={this.getStyles().radioButton}
           />
           <RadioButton
             ref="orderById"
             value="id"
-            label="ID"
+            label="ID号"
             style={this.getStyles().radioButton}
           />
           <RadioButton
             ref="orderByHost"
             value="hostname"
-            label="Host"
+            label="主机"
             style={this.getStyles().radioButton}
           />
         </RadioButtonGroup>
@@ -125,11 +125,11 @@ class TaskTable extends React.Component {
           <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
             <TableRow displayRowCheckbox={false} selectable={true}>
               <TableHeaderColumn>ID</TableHeaderColumn>
-              <TableHeaderColumn>Name</TableHeaderColumn>
-              <TableHeaderColumn>Status</TableHeaderColumn>
-              <TableHeaderColumn>Up time</TableHeaderColumn>
-              <TableHeaderColumn>Framework</TableHeaderColumn>
-              <TableHeaderColumn>Host</TableHeaderColumn>
+              <TableHeaderColumn>名称</TableHeaderColumn>
+              <TableHeaderColumn>状态</TableHeaderColumn>
+              <TableHeaderColumn>在线时间</TableHeaderColumn>
+              <TableHeaderColumn>组件</TableHeaderColumn>
+              <TableHeaderColumn>主机</TableHeaderColumn>
             </TableRow>
           </TableHeader>
           <TableBody displayRowCheckbox={false} selectable={false}>

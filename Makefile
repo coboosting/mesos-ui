@@ -2,7 +2,7 @@
 
 MESOS_VERSION ?= latest
 
-MESOS_UI_VERSION ?= latest
+MESOS_UI_VERSION ?= 0.1.4
 
 all: build_mesos_image build_standalone_image
 

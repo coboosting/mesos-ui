@@ -25,9 +25,9 @@ class Legend extends React.Component {
 
   getTitleMapping(key) {
     let titles = {
-      cpus: 'CPU',
-      disk: 'Disk',
-      mem: 'Memory'
+      cpus: '处理器',
+      disk: '磁盘',
+      mem: '内存'
     };
 
     return titles[key];

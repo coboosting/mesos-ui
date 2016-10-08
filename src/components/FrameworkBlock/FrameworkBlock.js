@@ -36,14 +36,14 @@ class FrameworkBlock extends React.Component {
     }
 
     if (typeof tasks !== 'undefined') {
-      appTasks = React.createElement('span', {}, '(' + tasks + ' Tasks)');
+      appTasks = React.createElement('span', {}, '(' + tasks + ' 任务)');
     }
 
     if (typeof webUrl !== 'undefined') {
       // Create a button/link element.
       appUrl = React.createElement(RaisedButton, { linkButton: true,
         href: webUrl,
-        label: 'Open',
+        label: '打开',
         secondary: true }
       );
     }

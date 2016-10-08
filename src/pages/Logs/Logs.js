@@ -25,7 +25,7 @@ class Logs extends React.Component {
   }
   render() {
     let style = this.getStyles();
-    let title = 'Master Logs';
+    let title = '主节点日志';
     let logs = this.props.logs;
     this.context.onSetTitle(title);
 

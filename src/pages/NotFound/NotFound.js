@@ -8,12 +8,12 @@ class NotFound extends React.Component {
   };
 
   render() {
-    let title = 'Page Not Found';
+    let title = '页面未找到';
     this.context.onSetTitle(title);
     return (
       <div>
         <PageTitle title={title} />
-        <p>Sorry, but the page you were trying to view does not exist.</p>
+        <p>对不起，你要浏览的页面不存在。</p>
       </div>
     );
   }

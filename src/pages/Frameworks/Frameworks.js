@@ -14,7 +14,7 @@ class Frameworks extends React.Component {
   };
 
   render() {
-    let title = 'Frameworks';
+    let title = '运行组件';
     let frameworks = this.props.frameworks;
     this.context.onSetTitle(title);
 
